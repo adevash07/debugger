@@ -1,0 +1,15 @@
+.mobileNav {
+   display: none;
+ 
+}
+
+@media screen and (max-width: 998px) {
+    .mobileNav .show {
+        display: block;
+        height: 100vw;
+        width: 50vw;
+        background-color: purple;
+    }
+}
+
+

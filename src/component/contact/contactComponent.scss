@@ -1,0 +1,146 @@
+.contact {
+       background-image: url("../../assets/blob.svg");
+        background-position: left -70px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-blend-mode: screen; 
+   
+    h2 {
+        margin-top: 8rem;
+        text-align: center;
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+    hr {
+        width: 15%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 4rem;
+    }
+
+    ul { 
+        padding-left: 0;
+    }
+
+    .contactLinks {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen';
+
+        li {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                margin: 2%;
+                display: flex;
+                font-size: calc(16px + 12 * ((100vw - 320px) / 680));
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 5%;
+
+                img {
+                    margin-right: 5%;
+                }
+                 li {
+                     margin-left: 5%;
+                 }
+            }
+        }
+
+        .leave {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        input, textarea {
+            width: 40%;
+            box-sizing: border-box;
+            font-size: 18px;
+            font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen';
+        }
+        input {
+            box-sizing: border-box;
+            height: 35px;
+            padding-top: 10px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: 1px solid #961396;
+            margin-bottom: 15px;
+            padding-left: 25px;
+
+
+            &:focus, &:active {
+                 border-left: none;
+                border-right: none;
+                border-top: none;
+                border-bottom: 2px solid #730f73;
+                outline: none;
+            }
+            
+
+        }
+        textarea {
+            margin-top: 25px;
+            border-color: #961396;
+            margin-bottom: 35px;
+
+            
+            &:focus, &:hover, &:active {
+                border-color: #730f73;
+                outline-color: #730f73;
+            } 
+
+        }
+
+        input[type="submit"] {    
+        background: #FFFFFF;
+        border: 1px solid #961396;
+        font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+        font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen';
+        font-weight: bolder;
+        padding-top: 5px;
+        padding-left: 0;
+
+        &:active, &:focus {
+            outline: none;
+            background-color: #961396;
+            color: white;
+        }
+        &:hover {
+            outline: none;
+            -webkit-box-shadow: 0px 0px 40px -9px rgba(150,19,150,1);
+            -moz-box-shadow: 0px 0px 40px -9px rgba(150,19,150,1);
+            box-shadow: 0px 0px 40px -9px rgba(150,19,150,1);
+        }
+      
+        }
+   
+        }
+
+    }
+}
+
+@media screen and (max-width: 1137px ) {
+    .contact .contactLinks form input, .contact .contactLinks form textarea  {
+       width: 60%;
+}
+}
+
+@media screen and (max-width: 750px ) {
+    .contact .contactLinks form input, .contact .contactLinks form textarea  {
+       width: 100%;
+}
+}

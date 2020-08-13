@@ -1,0 +1,14 @@
+.toggler {
+    display: none;
+}
+
+@media screen and (max-width: 998px){
+    .toggler { 
+        display: block;
+        width: 2.5rem;
+        height: 0.3rem;
+        background-color: black;
+        border-radius: 10px;
+        
+}
+}

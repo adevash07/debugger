@@ -1,0 +1,89 @@
+.footer {
+    background-image: url("../../assets/bottom.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: screen;
+        margin-top: 6rem;
+        min-height: 300px;
+        box-sizing: border-box;
+
+
+        .content { 
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .me {
+                background-image: url("../../assets/me.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-blend-mode: screen;
+                width: 31rem;
+                height: 30rem;
+            }
+            .madeBy {
+                margin-top: 8rem;
+                flex: 2;
+                text-align: center;
+                font-weight: bold;
+                font-size: calc(24px + 6 * ((100vw - 320px) / 680));
+                line-height: calc(64px + 6 * ((100vw - 320px) / 680));
+                vertical-align: text-top;
+
+                .trans_color {
+                    background: rgba(196, 196, 196, 0.2);
+                    transform: rotate(1.61deg);
+                    color: #FFFFFF;
+                }
+
+                .copy {
+                    color: white;
+                }
+            }
+
+            .social {
+                display: flex;     
+                flex: 1;
+                align-items: center;
+                flex-direction: column;
+
+                a {
+                    img {
+                         min-width: 3rem;
+                         min-height: 3rem;
+                         background-color: rgba(150, 19, 150, 0.6);
+                         margin: 1rem;
+
+                         &.purplemail {
+                             content: url("../../assets/purplemail.svg");
+                         }
+                    }
+                }
+            }
+        }
+}
+
+@media screen and (max-width: 1137px ) {
+    .footer .content .social {
+        flex-basis: 100%!important;
+        margin-top: 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .me {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        img {
+            max-width: 100%;
+            min-height: 100%;
+        }
+    }
+}

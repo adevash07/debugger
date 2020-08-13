@@ -1,0 +1,32 @@
+.skills {
+        width: 80%;
+        margin: 0 auto;
+   
+    h2 {
+        margin-top: 8rem;
+        text-align: center;
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+    hr {
+        width: 15%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 4rem;
+    }
+
+    .skillList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .equalWidth {
+            flex: 1 24%;
+            width: 120px;
+            height: 150px;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            
+        }
+
+    }
+}
