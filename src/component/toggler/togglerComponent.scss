@@ -2,13 +2,98 @@
     display: none;
 }
 
-@media screen and (max-width: 998px){
-    .toggler { 
-        display: block;
-        width: 2.5rem;
-        height: 0.3rem;
-        background-color: black;
-        border-radius: 10px;
+@media screen and (max-width: 998px) {
+    .toggler {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 17px 10px;
+        border-radius: 100%;
+        background-color: white;
+        z-index: 70;
         
+        button:focus, button:active {
+            outline: none;
+            border-color: black;
+            background-color: black;
+
+        }
+        .toggler-btn1 {
+            position: relative; 
+            width: 39.52px;
+            height: 0px;
+            border: 1px solid #000000;
+            background-color: black;
+            border-radius: 5px;
+            border-color: black;
+            box-sizing: border-box;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+        
+        .toggler-btn2 {
+            position: relative; 
+            width: 27.7px;
+            height: 0px;
+            border: 1px solid #000000;
+            background-color: black;
+            border-radius: 5px;
+            border-color: black;
+            box-sizing: border-box;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+
+        .toggler-btn4.moveUp {
+                animation-name: moveUp;
+                transition: all ease-in-out 10s;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+            }
+        
+        .toggler-btn3 {
+            position: relative; 
+            width: 19.5px;
+            height: 0px;
+            border: 1px solid #000000;
+            background-color: black;
+            border-radius: 5px;
+            border-color: black;
+            box-sizing: border-box;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+        .toggler-btn1.moveDown {
+            animation-name: moveDown;
+                transition: all ease-in-out 10s;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+        }
+        .toggler-btn4 {
+            position: relative; 
+            width: 39.52px;
+            height: 0px;
+            border: 1px solid #000000;
+            background-color: black;
+            border-radius: 5px;
+            border-color: black;
+            box-sizing: border-box;
+            padding: 0;
+        }
+    }
 }
+
+@keyframes moveUp {
+            0% { transform: translateY(0px);}
+            90% { transform: translateY(-7px);}
+            100% { transform: rotate(45deg) }
+                }
+@keyframes moveDown {
+            0% { transform: translateY(0px); }
+            90% { transform: translateY(7px); }
+            100% { transform: rotate(-45deg); }
 }

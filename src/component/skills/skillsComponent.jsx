@@ -8,6 +8,9 @@ import sass from '../../assets/sass.svg';
 import figma from '../../assets/figma.svg';
 import js from '../../assets/js.svg';
 import api from '../../assets/api.svg';
+import npm from '../../assets/npm.svg';
+import hero from '../../assets/heroku.svg';
+
 
 
 import './skillsComponent.scss';
@@ -27,9 +30,9 @@ const Skills = () => {
                 <img src={git} alt="g" className="equalWidth"></img>
                 <img src={boot} alt="h" className="equalWidth"></img>
                 <img src={react} alt="i" className="equalWidth"></img>
-                <img src={git} alt="g" className="equalWidth"></img>
-                <img src={boot} alt="h" className="equalWidth"></img>
-                <img src={figma} alt="d" className="equalWidth"></img>
+                <img src={npm} alt="g" className="equalWidth"></img>
+                <img src={hero} alt="h" className="equalWidth"></img>
+                
             </div>
         </div>
     )

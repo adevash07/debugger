@@ -4,11 +4,58 @@
 }
 
 @media screen and (max-width: 998px) {
-    .mobileNav .show {
+    .mobileNav.show {
+        position: fixed;
+        z-index: 40;
         display: block;
-        height: 100vw;
-        width: 50vw;
-        background-color: purple;
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4);
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        .modalNav {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 70%;
+        min-height: 100%;
+        max-height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        align-items: center;
+        transition: all ease-in-out 2s ;
+ 
+    .img {
+        margin-top: 20%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .list {
+            .links {
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    list-style-type: none;
+                    align-content: center;
+                    font-size: calc(42px + 6 * ((100vw - 320px) / 680));
+
+                li a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+            } 
+    }
+      
+
+}
     }
 }
 

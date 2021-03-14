@@ -19,8 +19,10 @@ const Home = () =>  {
                     </span>
                 </div>
                 <div className="btn">
-                    <button className="btn_button" style={{marginRight:"20%"}}> DownLoad CV</button>
-                    <button className="btn_button" style={{marginLeft: "20%"}}>Contact ME</button>
+                    
+                    <a href="#a"><button className="btn_button" style={{marginRight:"20%"}}>Download CV</button></a>
+                    
+                    <a href="#contact"><button className="btn_button" style={{marginLeft: "20%"}}>Contact ME</button></a>
                 </div>
             </div>
             <div className="buttom">

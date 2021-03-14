@@ -6,7 +6,7 @@ import './contactComponent.scss';
 
 const Contact = () => {
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <h2>Contact Me</h2><hr />
 
             <ul className='contactLinks'>
@@ -16,6 +16,7 @@ const Contact = () => {
                 <div className="leave">
                     <h3> OR </h3>
                     <h4>Leave Me a Direct Message</h4>
+                    <h4 className="whatsUp">What’s Up?, let connect</h4>
                 </div>
 
                 <form>
