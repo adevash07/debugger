@@ -57,12 +57,31 @@
         .leave {
             text-align: center;
             margin-bottom: 2rem;
+            justify-content: center;
+            align-items: center;
 
             .whatsUp {
                 font-family: Josefin Sans;
                 font-style: normal;
                 font-weight: normal;
                 margin-top: 4rem;
+            }
+            .sent {
+                visibility: hidden;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                p {
+                 background-color: red;
+                padding: 10px;
+                color: white;
+                width: 10em;
+                text-align: center;
+                align-self: center; 
+                }
+                
+
             }
         }
 
@@ -114,7 +133,7 @@
 
         input[type="submit"] {    
         background: #FFFFFF;
-        border: 1px solid #961396;
+        border: 1px solid #af96af;
         font-size: calc(10px + 6 * ((100vw - 320px) / 680));
         font-family: 'Josefin Sans', 'Segoe UI', 'Roboto', 'Oxygen';
         font-weight: bolder;
